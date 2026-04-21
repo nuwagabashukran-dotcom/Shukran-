@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --breakpoint-3xl: 1920px;
+
+  --color-yt-red: #FF0000;
+  --color-yt-bg: #0F0F0F;
+  --color-yt-dark-bg: #0F0F0F;
+  --color-yt-gray: rgba(255, 255, 255, 0.5);
+  --color-yt-light-gray: rgba(255, 255, 255, 0.05);
+  --color-yt-hover: rgba(255, 255, 255, 0.1);
+  --color-surface: #121212;
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+}
+
+@layer base {
+  html {
+    font-size: 14px; /* Standard density for app-like fee */
+  }
+  body {
+    @apply font-sans bg-[#0F0F0F] text-white antialiased;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Scrollbar for Sleek feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

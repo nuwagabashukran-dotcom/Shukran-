@@ -1,0 +1,6 @@
+{
+  "name": "Shazam",
+  "description": "A high-fidelity Shazam clone featuring official design patterns, personalization, and watch later functionality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
